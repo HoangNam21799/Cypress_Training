@@ -14,5 +14,9 @@
     "cypress"
   ],
   "author": "NamPH",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.13.1",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  }
 }
