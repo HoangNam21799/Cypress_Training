@@ -1,10 +1,7 @@
-const { defineConfig } = require('cypress');
-const cucumber = require('cypress-cucumber-preprocessor').default
-
-module.exports = defineConfig({
+module.exports = ({
   e2e: {
+    chromeWebSecurity: false,
     setupNodeEvents(on, config) {
-      on('file:preprocessor', cucumber());
     },
     // specPattern: 'cypress/integration/login.feature',
     // baseUrl: 'https://dev.pamnas2.jp',
